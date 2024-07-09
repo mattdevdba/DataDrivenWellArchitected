@@ -16,6 +16,31 @@ Above all I will show a data driven approach using the Generative AI features in
 
 ![DEV203 - Data Driven Well Architected - AWS NYC Summit 2024 - Architecture Diagram.png](https://github.com/mattdevdba/DataDrivenWellArchitected/blob/main/DEV203%20-%20Data%20Driven%20Well%20Architected%20-%20AWS%20NYC%20Summit%202024%20-%20Architecture%20Diagram.png)
 
+## Lambda Fucntions
+
+### get-workloads
+
+This Lambda fucntion should be executed on a schedule via Event Bridge Rule.
+For example run every day at 8AM.
+* name: well-architected-schedule
+* Schedule expression: cron(0 08 * * ? *)
+
+### export-workload-history
+
+This lambda fucntion should be executed via an Event Bridge Rule:
+* Event bus: default
+* Event pattern:
+```
+{
+  "detail-type": [
+    "well-architected-workload"
+  ]
+}
+```
+It requires the following environmnet variables to be set.
+* S3_BUCKET : the-name-of-your-s3-bucket
+* S3_KEY : folder/
+
 
 
 
