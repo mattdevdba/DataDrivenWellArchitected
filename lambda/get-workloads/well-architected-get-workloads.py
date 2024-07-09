@@ -42,7 +42,7 @@ def put_event(workload_id):
                 'Source': 'get-workloads',
                 'DetailType': 'well-architected-workload',
                 'Detail': json.dumps(detailjsonstring),
-                'EventBusName': 'cdl-well-architected-bus'
+                'EventBusName': 'default'
             }
         ]
     )
