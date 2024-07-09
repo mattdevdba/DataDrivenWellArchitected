@@ -12,4 +12,11 @@ I’ll show how you can improve design review transparency and tailor well archi
 
 Above all I will show a data driven approach using the Generative AI features in Q for QuickSight to ask questions around architure risks and identify trends for improvements across a software development organisation.
 
+## Architecture Diagram for Solution
+
+![DEV203 - Data Driven Well Architected - AWS NYC Summit 2024 - Architecture Diagram.png](https://github.com/mattdevdba/DataDrivenWellArchitected/blob/main/DEV203%20-%20Data%20Driven%20Well%20Architected%20-%20AWS%20NYC%20Summit%202024%20-%20Architecture%20Diagram.png)
+
+
+
+
 
